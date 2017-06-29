@@ -3,17 +3,19 @@ require('styles/App.css');
 
 import React from 'react';
 
-class AppComponent extends React.Component {
-  render() {
-    return (
-      <div className="index">
-        <div className="notice">Pantalla principal con lista de usuarios</div>
-      </div>
-    );
-  }
+import HeaderContent from './HeaderContent.js'
+import MainContent from './MainContent.js'
+
+export default class AppComponent extends React.Component {
+	constructor(){
+		super()
+	}
+  	render() {
+	    return (
+		    <div>
+				<HeaderContent/>
+		    	<MainContent/>		    	
+		    </div>
+	    )
+  	}
 }
-
-AppComponent.defaultProps = {
-};
-
-export default AppComponent;
