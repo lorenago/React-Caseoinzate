@@ -1,4 +1,5 @@
 /* Base Application Styles */
+
 body {
   width: 100%;
   height: 100vh;
@@ -27,6 +28,10 @@ body {
   background: #666;
 }
 
+.title {
+  font-weight: bold;
+}
+
 .photo {
   width: 150px;
   height: 150px;
@@ -35,7 +40,7 @@ body {
 
 #content {
   width: 100%;
-  height: 200px;
+  height: 150px;
   display: flex;
   flex-direction: row;
   background: rgba(246,41,12,1);
@@ -50,15 +55,15 @@ body {
 
 #content p {
   font-size: 4em;
-  margin-left: 3%;
+  margin: auto 3%;
   color: white;
 }
 
 #image {
   display: flex;
-  width: 20%;
+  width: auto;
+  height: 150px;
   margin-left: 2%;
-  height: 100%;
 }
 #logo {
   display: flex;
@@ -77,7 +82,6 @@ body {
 
 #photoList {
   width: 180px;
-  padding-top: 2%;
   border-right: thin solid #6abbbe;
   text-align: center;
 }
@@ -94,11 +98,21 @@ body {
   display: flex;
   flex-direction: row;
 }
-
-#userInfo {
+/*
+#userDetail .photo {
+  margin: auto 15px;
+}*/
+.userInfo {
   flex-direction: column;
+  margin: 0 2%;
+  flex: 1;
 }
-
+.albumIcon {
+  width: 24px; 
+  height: 24px;
+  margin-bottom: -0.35em;
+  margin-right: 2%;
+}
 #photoDetail {
   margin-bottom: 10%;
 }
@@ -110,8 +124,26 @@ body {
   margin-top: 0;
 }
 
+#albumDetail {
+  margin: 10px 0;
+}
+#useralbums {
+  width: 30%;
+  float: right;
+  padding-left: 3%;
+  border-left: thin solid #6abbbe;
+}
+#albumDetail:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  #photoList {
+    display: none;
+  }
+}
 @media screen and (max-width: 620px) {
-  #headerTitle {
+  #content p {
     display: none;
   }
 }

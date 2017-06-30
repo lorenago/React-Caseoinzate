@@ -11,7 +11,7 @@ export default class HeaderComponent extends React.Component {
 				<div id="image">
 					<img id="logo" src="../images/logoF.png"/>
 				</div>
-				<p>Caseonizate</p>
+				<p>CASEONIZATE</p>
 			</div>
 		)
 	}

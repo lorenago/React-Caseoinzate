@@ -1,3 +1,4 @@
+
 import 'core-js/fn/object/assign';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -7,12 +8,13 @@ import App from './components/Main';
 ReactDOM.render(<App/>, document.getElementById('app'));
 
 
-/*
 
+
+/*
 import 'core-js/fn/object/assign';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRouter, hasHistory } from 'react-router'
+import { Router, Route, IndexRoute, hasHistory } from 'react-router'
 
 
 import Home from './Routes/Home.js'
@@ -25,6 +27,9 @@ ReactDOM.render(
 		<Route path='store' component={Store}/>
 	</Router>
 , document.getElementById('app'));
+
+
+
 
 
 */

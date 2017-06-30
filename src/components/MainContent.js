@@ -1,39 +1,38 @@
 import React from 'react'
-//import $ from 'jquery'
 
 import PhotoList from './PhotoList.js'
 import UserList from './UserList.js'
 
-
 export default class MainContent extends React.Component {
 	constructor(){
-		super();
-		this.state ={
-			users:{}
+		super()
+		this.state = {
+			users: [],
+			photos: []
 		}
 	}
-
-/*	componentDidMount() {
-		debugger;
-		$.ajax({
-	      	method:'GET',
-	       	url:'http://jsonplaceholder.typicode.com/users',
-	       //	data:{ 'sessionId': id  },
-	       	success:function(res){
-	       		console.log(res);
-	         	this.setState({ users:res.data })
-	       	}.bind(this)
-	    });
+	componentWillMount(){
+		fetch('http://jsonplaceholder.typicode.com/users')
+			.then((response) => {
+				return response.json()
+			})
+			.then((users)=>{
+				this.setState({ users: users})
+			})
+		fetch('http://jsonplaceholder.typicode.com/photos')
+			.then((response) => {
+				return response.json()
+			})
+			.then((photos)=>{
+				this.setState({ photos: photos})
+			})
 	}
-*/
 	render() {
 		return (
 			<div id="mainContent">
-				<PhotoList />
+				<PhotoList photos={this.state.photos}/>
 				<UserList users={this.state.users}/>
 			</div>
 		);
 	}
 }
-
-//<UserList users={this.state.users}/>

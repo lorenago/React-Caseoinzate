@@ -1,5 +1,6 @@
 - Creada la estructura general del proyecto sobre la cual se trabajará posteriormente. Gran parte de dicha estructura no se utilizará al menos durante el desarrollo inicial, pero he decidido apoyarme en el generador Yeoman para crear la estructura básica del proyecto por rapidez y buenas prácticas.
 - Al estar basada en react, se añaden todas las dependencias necesarias.
 - Se hace la maqueta general, con los componentes de la página principal.
-- También se prueba de diversas maneras las peticiones Ajax, pero obtengo errores de compilación. Será el siguiente aspecto a revisar en el desarrollo de la aplicación.
-- La intención, asimismo es mostrar, junto a la información del usuario, los álbunes disponibles y el número de fotos. Sin embargo, esto dependerá del tiempo disponible para terminar la aplicación.
+- Se incluyen peticiones a la api para users, photos (en general), y álbumes asociados a cada usuario.
+- Falta por implementa la funcionalidad de click en cada álbum y mostrar sus fotos, sin embargo, el tiempo empleado para el desarrollo de la aplicación ya ha llegado (y superado) las 3 horas límites que se establecían. 
+- Con fines didácticos, y hasta nueva orden, continuaré haciendo pequeños avances.

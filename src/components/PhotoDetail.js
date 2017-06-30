@@ -8,9 +8,9 @@ export default class PhotoDetail extends React.Component{
 		return(
 			<div id="photoDetail">
 				<div class="photo">
-					<img src="http://placehold.it/150/fdf73e"/>
+					<img src={this.props.photo.thumbnailUrl}/>
 				</div>
-				<p>Usuario</p>
+				<p>{this.props.photo.title}</p>
 			</div>
 		);
 	}
